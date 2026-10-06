@@ -1,0 +1,25 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+.env
+.env.*
+
+# Original and derived microscopy data remain local.
+*.dv
+*.tif
+*.tiff
+*.ome.tif
+*.ome.tiff
+example_results/
+diakinesis_results/
+results/
+outputs/
+
+# Generated figures and logs; illustrative examples are CSV files in examples/.
+*.log
+condition_comparison.png
+conditions.png

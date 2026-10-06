@@ -1,0 +1,31 @@
+condition: null  # Defaults to the input folder name.
+channels:
+  dapi_emission_nm: 435
+  lmn_emission_nm: 679
+  wavelength_tolerance_nm: 20
+dapi:
+  gaussian_radius: 1
+  moments_bins: 20
+  minimum_size_voxels: 200
+  fill_small_holes: false
+lmn:
+  gaussian_radius: 1
+  moments_bins: 25
+  minimum_size_voxels: 70000
+  center_gap_high_px: 75
+  center_gap_medium_px: 35
+morphology:
+  dilation_iterations: 7
+  hole_fill_iterations: 6
+calibration:
+  mode: metadata
+  legacy_voxel_size_um: {z: 0.2, y: 0.0643, x: 0.0643}
+gating:
+  mode: tolerant
+qc:
+  save_png: true
+  save_masks: true
+review:
+  low_count: 4
+  high_count: 8
+  merge_volume_ratio: 3.0

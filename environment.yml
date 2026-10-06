@@ -1,0 +1,11 @@
+name: diakinesis
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - numpy=1.26
+  - scipy=1.15
+  - simpleitk=2.4
+  - tifffile
+  - matplotlib=3.10
+  - pyyaml
